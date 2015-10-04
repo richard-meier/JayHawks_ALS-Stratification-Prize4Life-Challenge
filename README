@@ -2,8 +2,8 @@
 ### JayHawks Team submission in the ALS Stratification Prize4Life Challenge ###
 ###############################################################################
 
-The Challenge Page:		https://www.synapse.org/#!Synapse:syn2873386
-Project Write-up Page:	https://www.synapse.org/#!Synapse:syn4942470/wiki/
+The Challenge Page: https://www.synapse.org/#!Synapse:syn2873386
+Project Write-up Page:  https://www.synapse.org/#!Synapse:syn4942470/wiki/
 
 Make sure to point the paths specified at the top of each script to the respective 
 input and output files on your local hard disk drive. There are three subdirectories, 
@@ -27,6 +27,7 @@ The ModelCreation scripts were used to find prediction models for the specific
 outcomes within the derived cluster groups. In order for the ModelCreation scripts to 
 run the CrossValidationUtilities scripts are loaded. These scripts contain functions 
 for the stepwise feature selection procedure.
+
 
 ## The finalSubmission directory ##
 
