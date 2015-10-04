@@ -5,34 +5,36 @@
 The Challenge Page:		https://www.synapse.org/#!Synapse:syn2873386
 Project Write-up Page:	https://www.synapse.org/#!Synapse:syn4942470/wiki/
 
-Make sure to point the paths specified at the top of each script to the respective input and output
-files on your local hard disk drive. There are three subdirectories, which cover different aspects 
-of the challenge. 
+Make sure to point the paths specified at the top of each script to the respective 
+input and output files on your local hard disk drive. There are three subdirectories, 
+which cover different aspects of the challenge. 
 
 
 ## The dataCleaning directory ##
 
-These two scripts read in and clean the training data for both datasets. They also transform the 
-data into the appropriate format that is required for downstream processing. If you are interested
-in running any of the other programs within this project you have to RUN THESE SCRIPTS FIRST, as
-they generate required input files.
+These two scripts read in and clean the training data for both datasets. They also 
+transform the data into the appropriate format that is required for downstream 
+processing. If you are interested in running any of the other programs within this 
+project you have to RUN THESE SCRIPTS FIRST, as they generate required input files.
 
 
 ## The clusteringAndModelSelection directory ##
 
-Scripts contained in this directory illustrate how our team derived the final clusters and cluster 
-models utilizing CART and stepwise feature selection. The ClusterCreation files were used to obtain
-classification rules for subsetting patients into clusters. The ModelCreation scripts were used to
-find prediction models for the specific outcomes within the derived cluster groups. In order for
-the ModelCreation scripts to run the CrossValidationUtilities scripts are loaded. These scripts
-contain functions for the stepwise feature selection procedure.
+Scripts contained in this directory illustrate how our team derived the final clusters 
+and cluster models utilizing CART and stepwise feature selection. The ClusterCreation 
+files were used to obtain classification rules for subsetting patients into clusters. 
+The ModelCreation scripts were used to find prediction models for the specific 
+outcomes within the derived cluster groups. In order for the ModelCreation scripts to 
+run the CrossValidationUtilities scripts are loaded. These scripts contain functions 
+for the stepwise feature selection procedure.
 
 ## The finalSubmission directory ##
 
-This directory contains all scripts used for the final submission to the challenge. Each subdirectory
-corresponds to one of the four subchallenges. Selector scripts classify new patients, while Predictor
-scripts predict outcomes after classification. 
-Before these two scripts can be executed the train_models scripts have to be executed. They generate
-the final prediction models based on the training set and save said models in a RData file that has
-to be loaded within the Predictor script.
+This directory contains all scripts used for the final submission to the challenge. 
+Each subdirectory corresponds to one of the four subchallenges. Selector scripts 
+classify new patients, while Predictor scripts predict outcomes after 
+classification. 
+Before these two scripts can be executed the train_models scripts have to be executed. 
+They generate the final prediction models based on the training set and save said 
+models in a RData file that has to be loaded within the Predictor script.
 
